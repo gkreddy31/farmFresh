@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/farmFresh" mode="merge"/>
+    <filter root="/content/farmFresh" mode="merge"/>
+    <filter root="/content/dam/farmFresh" mode="merge">
+        <exclude pattern="/content/dam/farmFresh(/.*)?"/>
+        <include pattern="/content/dam/farmFresh/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/farmFresh/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/farmFresh" mode="merge"/>
+</workspaceFilter>
