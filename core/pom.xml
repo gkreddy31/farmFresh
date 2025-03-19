@@ -140,5 +140,13 @@ Import-Package: javax.annotation;version=0.0.0,*
             <version>1.4.14</version>
             <scope>test</scope>
         </dependency>
+        <!-- Required to be able to inject with @Slf4j -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 </project>
