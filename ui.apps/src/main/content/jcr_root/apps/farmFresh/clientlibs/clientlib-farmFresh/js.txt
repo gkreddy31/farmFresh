@@ -1,0 +1,9 @@
+#base=js
+jquery-3.3.1.min.js
+bootstrap.min.js
+jquery.nice-select.min.js
+jquery-ui.min.js
+jquery.slicknav.js
+mixitup.min.js
+owl.carousel.min.js
+main.js
