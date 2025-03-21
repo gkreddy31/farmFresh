@@ -1,1 +1,9 @@
 #base=css
+bootstrap.min.css
+font-awesome.min.css
+elegant-icons.css
+nice-select.css
+jquery-ui.min.css
+owl.carousel.min.css
+slicknav.min.css
+style.css
