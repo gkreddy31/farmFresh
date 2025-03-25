@@ -1,0 +1,43 @@
+<sly data-sly-use.model="com.bhasaka.farmfresh.core.models.ColoumnContainerModel"/>
+<div class="container">
+    <div class="row">
+        <sly data-sly-test="${model.columnsType == 'column1'}">
+            <div class="col-12">
+                <sly data-sly-resource="${'column1' @ resourceType='core/wcm/components/container/v1/container'}"></sly>
+            </div>
+        </sly>
+        <sly data-sly-test="${model.columnsType == 'column2'}">
+            <div class="col-6">
+                <sly data-sly-resource="${'column1' @ resourceType='core/wcm/components/container/v1/container'}"></sly>
+            </div>
+            <div class="col-6">
+                <sly data-sly-resource="${'column2' @ resourceType='core/wcm/components/container/v1/container'}"></sly>
+            </div>
+        </sly>
+        <sly data-sly-test="${model.columnsType == 'column3'}">
+            <div class="col-4">
+                <sly data-sly-resource="${'column1' @ resourceType='core/wcm/components/container/v1/container'}"></sly>
+            </div>
+            <div class="col-4">
+                <sly data-sly-resource="${'column2' @ resourceType='core/wcm/components/container/v1/container'}"></sly>
+            </div>
+            <div class="col-4">
+                <sly data-sly-resource="${'column3' @ resourceType='core/wcm/components/container/v1/container'}"></sly>
+            </div>
+        </sly>
+        <sly data-sly-test="${model.columnsType == 'column4'}">
+            <div class="col-3">
+                <sly data-sly-resource="${'column1' @ resourceType='core/wcm/components/container/v1/container'}"></sly>
+            </div>
+            <div class="col-3">
+                <sly data-sly-resource="${'column2' @ resourceType='core/wcm/components/container/v1/container'}"></sly>
+            </div>
+            <div class="col-3">
+                <sly data-sly-resource="${'column3' @ resourceType='core/wcm/components/container/v1/container'}"></sly>
+            </div>
+            <div class="col-3">
+                <sly data-sly-resource="${'column4' @ resourceType='core/wcm/components/container/v1/container'}"></sly>
+            </div>
+        </sly>
+    </div>
+</div>
