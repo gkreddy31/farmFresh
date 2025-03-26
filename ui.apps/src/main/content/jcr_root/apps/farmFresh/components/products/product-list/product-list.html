@@ -1,0 +1,16 @@
+<div data-sly-use.model="com.bhasaka.farmfresh.core.models.ProductListModel"></div>
+<section class="categories">
+    <div class="container">
+        <div class="row">
+            <div class="categories__slider owl-carousel">
+                <sly data-sly-list.productList="${model.productList}">
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg" data-setbg="${productList[0]}">
+                            <h5><a href="#">${productList[1]}</a></h5>
+                        </div>
+                    </div>
+                </sly>
+            </div>
+        </div>
+    </div>
+</section>
