@@ -1,0 +1,29 @@
+<div data-sly-use.model="com.bhasaka.farmfresh.core.models.RecentProductsModel"></div>
+<section class="latest-product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="latest-product__text">
+                    <h4>${model.title}</h4>
+                    <div class="latest-product__slider owl-carousel">
+                        <sly data-sly-list.sublist="${model.subModelsList}">
+                            <div class="latest-product__slider__item">
+                                <sly data-sly-list.product="${sublist}">
+                                    <a href="#" class="latest-product__item">
+                                        <div class="latest-product__item__pic">
+                                            <img src="${product.productImage}" alt="${product.productTitle}">
+                                        </div>
+                                        <div class="latest-product__item__text">
+                                            <h6>${product.productTitle}</h6>
+                                            <span>${product.productPrice}</span>
+                                        </div>
+                                    </a>
+                                </sly>
+                            </div>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
